@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container_center{
+    width: 1100px;
+    display: inline-block;
+    background-color: aqua;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header{
+    background-color: #69C368;
+    height: 53.99px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 1100px;
+}
+header img{
+    width: 50px;
+}
+.header_search_main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header_search_logo{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: large;
+}
+.header_search_sub1, .header_search_main a{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+.header_search_sub1 select, input,.header_search_sub1 a{
+    border: 0px;
+    height: 35px;
+    padding: 0;
+}
+.header_search_sub1 i{
+    margin-right: 5px;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+}
+header i{
+    font-size: 20px;
+}
+span, .header_search_sub1 a, .header_nav a{
+    background-color: green;
+    padding: 0px 10px;
+    margin-right: 5px;
+}
+span, .header_nav a{
+    
+    margin-right: 15px;
+}
+.header_nav a{
+    font-size: x-small;
+    padding: 5px;
+}
+
+/* 헤더 끝 */
+
+/* 네브 시작 */
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    height: 40px;
+}
+nav p, i{
+    color: black;
+    font-size: small;
+    margin: 10px;
+}
+.nav_12{
+    display: flex;
+}
+.nav_12 p:hover{
+    color: #69C368;
+}
+.nav_1{
+    display: flex;
+}
+.nav_2{
+    display: flex;
+}
+.nav_3{
+    display: flex;
+    
+    }
+.nav_3 p{
+    margin-right: 5px;
+    padding: 3px;
+    border: 1px solid green;
+}
+.nav_3 p:first-child{
+    color: white;
+    background-color: #69C368;
+}
+/* 네브 끝 */
+
+
+/* 메인 시작 */
+/* 핫 토픽 */
+.hot_topic{
+    height: 300px;
+    background-color: #e8e8e8;
+}
+.ht_nav{
+    /* background-color: #dfdede; */
+    display: flex;
+    justify-content: space-between;
+}
+.ht_nav a:first-child{
+    color: red;
+}
+.ht_nav_1{
+    margin-left: 10px;
+}
+.ht_nav_1 p{
+    margin: 10px 3px;
+}
+.ht_nav_1 a :hover{
+    text-decoration-line: underline;
+}
+.ht_num{
+    display: flex;
+    font-size: x-small;
+    align-items: end;
+}
+div, .ht_num1, .ht_num2{
+    display: flex;
+}
+.ht_num p {
+    background-color: #dfdededc;
+    color: gray;
+    padding: 0px 3px;
+    margin-right: 2px;
+    border: 1px solid grey;
+}
+.ht_num p:hover{
+    border: 1px solid rgb(0, 0, 0);
+}
+.ht_num1{
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    right: 253px;
+    
+}
+.ht_num2{
+    position: relative;
+    right: 13px;
+}
+.hot_topic img{
+    width: 260px;
+    height: 230px;
+    margin-right: 5px;
+}
+.ht_img{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0px 10px;
+}
+.ht_img1{
+    /* margin-right: 10px; */
+}
+
+/* 메인 핫토픽 끝 */
+/* 메인 글 시작 */
+section.글{
+    background-color: gold;
+    width: 700px;
+    margin: 0;
+    padding: 0;
+    /* display: inline-block; */
+}
+.로그아웃안내{
+    background-color: aquamarine;
+    width: 700px;
+    height: 120px;
+    text-align: center;
+    /* display: inline-block; */
+}
+.로그아웃안내 p{
+    margin: 0 auto;
+    line-height: 30px;
+    padding-top: 25px;
+}
+.글_nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.글_nav li{
+    font-size: small;
+    margin-right: 10px;    
+}
+
+
+
+
+
+/* 어사이드 */
+aside{
+    /* display: inline-block; */
+    width: 400px;
+    background-color: brown;
+}
+
