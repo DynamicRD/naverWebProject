@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORT HOME</title>
+    <script src="https://kit.fontawesome.com/6498553759.js" crossorigin="anonymous"></script>
+    <style>
+    .nav_naver{
+        height: 30px;
+        font-size: 24px;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        
+    }
+    div a.news,a.enter{
+        opacity: 0.2;
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .naver_logo{
+        color: rgba(60,209,75,255);
+       
+    }
+    .sport_logo{
+        font-weight: 700;
+        color: black;
+        text-decoration: none;
+    }
+    ul.nav_icon{
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+
+       
+    }
+    ul.nav_icon li {
+        list-style-type: none;
+       
+    }
+    ul.nav_icon li a{
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        
+    }
+    nav ul.sport_event ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    nav ul.sport_event li{
+        padding-top: 10px;
+        list-style-type: none;
+        
+       
+    }
+    nav ul.sport_event li a{
+        padding: 5px;
+        text-decoration: none;
+        color: black;
+    }
+    nav ul.sport_event{
+        margin: 0 220px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    nav.hd_nav2{
+        margin-top: 15px;
+        height: 40px;
+        background-color: rgba(64,113,227,255);
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center
+    }
+    nav.hd_nav2 ul.sport_issue{
+        
+        margin: 0px 220px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center
+    }
+    nav.hd_nav2 ul.sport_issue li{
+        list-style-type: none;
+        
+    }
+    nav.hd_nav2 ul.sport_issue li a{
+        color: rgba(130,168,237,255);
+        padding: 5px;
+        text-decoration: none;
+    }
+    nav.sport_live{
+        background-color: rgba(238,241,247,255);
+        height: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center
+    }
+    nav.sport_live ul{
+        margin: 0px 220px;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center
+    }
+    nav.sport_live ul li{
+        
+        list-style-type: none;
+    }
+    nav.sport_live ul li a img{
+        width: 250px;
+        padding: 0px 2px;
+    }
+    main section.hot_issue{
+        padding-left: 220px;
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-content: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1s);
+    }
+   
+    main section.hot_issue ul li{
+        list-style-type: none;
+        
+    }
+    main section.hot_issue ul li a img{
+        width: 650px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+   aside{
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    main section.sport_video{
+        padding-left: 220px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+        
+    }
+    main section.sport_video a{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+    main section.sport_video ul{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    main section.sport_video ul li{
+        list-style-type: none;
+       
+    }
+    main section.sport_video ul li img{
+        width: 1000px;
+    }
+    main section.new_news{
+        margin-top: -50px;
+        padding-left: 220px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+    main section.new_news p{
+        font-size: 18px;
+        color: black;
+        font-weight: 700;
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+    main section.new_news ul li{
+        list-style-type: none;
+    }
+    main section.new_news ul li img{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        width: 1000px;
+    }
+    main section.live_poto{
+        
+        padding-left: 220px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+    main section.live_poto div{
+        padding-left: 50px;
+    }
+    main section.live_poto a{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+    main section.live_poto li{
+        list-style-type: none;
+        
+    }
+    main section.live_poto ul li img{
+        width: 1000px;
+    }
+    main section.shopping{
+        padding-left: 220px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+    main section.shopping div{
+        padding-left: 50px;
+    }
+    main section.shopping a{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+    main section.shopping li{
+        list-style-type: none;
+        
+    }
+    main section.shopping ul li img{
+        width: 1000px;
+    }
+    footer{
+        height: 240px;
+        background-color: rgba(242,244,247,255);
+    }
+    footer nav.fnav_object{
+        height: 50px;
+        font-size: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    footer nav.fnav_object a{
+        text-decoration: none;
+        color: rgba(159,160,162,255);
+    }
+    footer nav.fnav_object div{
+        padding-left: 100px;
+    }
+    footer nav.fnav_object ul{
+        padding-right: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    footer nav.fnav_object ul li{
+        list-style-type: none;
+        padding: 10px;
+    }
+    footer nav.fnav_last{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    footer nav.fnav_last ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    footer nav.fnav_last ul li{
+        list-style-type: none;
+        
+    }
+    footer nav.fnav_last ul li a{
+        padding: 20px;
+        font-size: 10px;
+        text-decoration: none;
+        color: rgba(159,160,162,255);
+    }
+    footer p{
+        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: rgba(159,160,162,255);
+    }
+    </style>
+   
+</head>
+<body>
+    <header>
+        <nav class="nav_naver">
+            <div class="nav_naver_font">
+                <a class="naver_logo" href="#"><i class="fa-sharp fa-solid fa-n"></i></a>
+                <a class="sport_logo" href="#">스포츠</a>
+                <a class="news" href="#">ㅣ 뉴스</a>
+                <a class="enter" href="#">ㅣ 연예</a>
+            </div>
+
+            <ul class="nav_icon">
+                <li><a href="#"><i class="fa-regular fa-circle-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-comment-dots"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-envelope"></i></a></i></li>
+                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="sport_event">
+                <li><a href="">홈</a></li>
+                <li><a href="">야구</a></li>
+                <li><a href="">해외야구</a></li>
+                <li><a href="">축구</a></li>
+                <li><a href="">해외축구</a></li>
+                <li><a href="">농구</a></li>
+                <li><a href="">배구</a></li>
+                <li><a href="">N골프</a></li>
+                <li><a href="">일반</a></li>
+                <li><a href="">e스포츠</a></li>
+            </ul>
+        </nav>
+        <nav class="hd_nav2">
+            <ul class="sport_issue">
+                <li><a href="">오늘의 경기</a></li>
+                <li><a href="">승부예측</a></li>
+                <li><a href="">연재</a></li>
+                <li><a href="">이슈톡</a></li>
+                <li><a href="">대학스포츠</a></li>
+                <li><a href="">랭킹</a></li>
+               
+            </ul>
+        </nav>
+        <nav class="sport_live">
+            <ul>
+                <li><a href="#"><img src="./Screenshots/nav1.jpg" alt="live1"></a></li>
+                <li><a href="#"><img src="./Screenshots/na2.jpg" alt="live2"></a></li>
+                <li><a href="#"><img src="./Screenshots/nav3.jpg" alt="live3"></a></li>
+                <li><a href="#"><img src="./Screenshots/nav4.jpg" alt="live4"></a></li>
+                <li><a href="#"><img src="./Screenshots/nav5.jpg" alt="live5"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hot_issue">
+            <ul>
+                <li><a href="#"><img src="./Screenshots/세션1/화면 캡처 2024-10-26 134941.jpg" alt="hot_issue1"></a></li>
+                <li><a href="#"><img src="./Screenshots/세션1/main2.jpg" alt="hot_issue2"></a></li>
+                <li><a href="#"><img src="./Screenshots/세션1/main3.jpg" alt="hot_issue3"></a></li>
+                <li><a href="#"><img src="./Screenshots/세션1/main4.jpg" alt="hot_issue4"></a></li>
+                <li><a href="#"><img src="./Screenshots/세션1/main5.jpg" alt="hot_issue5"></a></li>
+                <li><a href="#"><img src="./Screenshots/세션1/main6.jpg" alt="광고"></a></li>
+                
+            </ul>
+            <aside>
+                <img src="./Screenshots/aside/aside1.jpg" alt="aside1">
+                <img src="./Screenshots/aside/aside2.jpg" alt="aside2">
+            </aside>
+        </section>
+        <section class="sport_video">
+            <div>
+                <a href="#">많이 본 영상</a>
+                <a href="#"><i class="fa-duotone fa-solid fa-angle-right"></i></a>
+            </div>
+            <ul>
+                <li><img src="./Screenshots/sport_video/video1.jpg" alt="video1"></li>
+                <li><img src="./Screenshots/sport_video/video2.jpg" alt="video2"></li>
+                <li><img src="./Screenshots/sport_video/video3.jpg" alt="video3"></li>
+                <li><img src="./Screenshots/sport_video/video4.jpg" alt="video4"></li>
+            </ul>
+        </section>
+        <section class="new_news">
+            <p>추천뉴스</p>
+            <ul>
+                <li><a href="#"><img src="./Screenshots/new_news/news1.jpg" alt="news1"></a></li>
+                <li><a href="#"><img src="./Screenshots/new_news/news2.jpg" alt="news2"></a></li>
+                <li><a href="#"><img src="./Screenshots/new_news/news3.jpg" alt="news3"></a></li>
+                <li><a href="#"><img src="./Screenshots/new_news/news4.jpg" alt="news4"></a></li>
+            </ul>
+        </section>
+        <section class="live_poto">
+            <div>
+                <a href="#">생생화보</a>
+                <a href="#"><i class="fa-duotone fa-solid fa-angle-right"></i></a>
+            </div>
+            <ul>
+                <li><a href="#"><img src="./Screenshots/live_poto/poto.jpg" alt="poto"></a></li>
+            </ul>
+        </section>
+        <section class="shopping">
+            <div>
+                <a href="#">네이버 쇼핑</a>
+                <a href="#"><i class="fa-duotone fa-solid fa-angle-right"></i></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#"><img src="./Screenshots/shop/shop.jpg" alt=""></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <nav class="fnav_object">
+            <div >
+                <p>공지사항 <a href="#">'MY팀' 및 팀 페이지 방문 경로 추가 안내</a></p>
+                
+            </div>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">야구</a></li>
+                <li><a href="#">해외야구</a></li>
+                <li><a href="#">축구</a></li>
+                <li><a href="#">해외축구</a></li>
+                <li><a href="#">농구</a></li>
+                <li><a href="#">배구</a></li>
+                <li><a href="#">N골프</a></li>
+                <li><a href="#">일반</a></li>
+                <li><a href="#">e스포츠</a></li>
+            </ul>
+        </nav>
+        <nav class="fnav_last">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">전체서비스</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">문제신고</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">기사배열 책임자: 김수향</a></li>
+                <li><a href="#">청소년 보호 책임자:이정규</a></li>
+            </ul>
+        </nav>
+        <p>본 콘텐츠의 저작권은 제공처 또는 네이버에 있으면, 이를 무단 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p>
+        <p> ⓒ NAVER Corp.</p>
+    </footer>
+</body>
+</html>
