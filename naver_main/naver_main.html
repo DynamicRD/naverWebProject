@@ -513,24 +513,6 @@
             </table>
         </div>
     </footer>
-    <img id="scrollToTop" src="path/to/your/image.png" alt="위로 가기" style="display: none;">
-
-    <script>
-        window.onscroll = function() {
-            const button = document.getElementById("scrollToTop");
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                button.style.display = "block";
-            } else {
-                button.style.display = "none";
-            }
-        };
-
-        document.getElementById("scrollToTop").onclick = function() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        };
-    </script>
+    
 </body>
 </html>
