@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de7b35df6f.js" crossorigin="anonymous"></script>
+    <title>CAFE</title>
+    <style>
+        header{
+            margin-top: 30px;
+            display: flex;   
+            height: 40px;
+            border-bottom: 0.1px solid rgba(83, 83, 83, 0.144);
+            justify-content: space-between;
+        }
+        input{
+            width: 300px;
+            border: 2px solid green; 
+            border-radius: 20px;
+        }
+        div.logo{
+            display: flex;
+            justify-content: flex-start;
+        }
+        div.logo_search{
+            width: 500px;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 300px;
+        }
+        div.top_right{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 200px;
+        }
+        div.middle{
+            margin-left: 200px;
+            margin-right: 10px;
+            display: flex;
+        }
+        div.middle_left{
+            margin-top: 0;
+            border-right: 0.1px solid rgba(83, 83, 83, 0.144);
+            margin-left: 100px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        div.big_menu{
+            margin-top: 30px;
+            height: 300px;
+        }
+        div.small_menu a{
+            text-decoration-line: none;
+        }
+        div.small_menu a:visited{
+            color: black;
+        }
+        div.small_menu a:hover{
+            text-decoration: underline;
+        }
+        div.middle_middle{
+            margin-left: 50px;
+            margin-right: 50px;
+            border-right: 0.1px solid rgba(83, 83, 83, 0.144);
+        }
+        div.hot{
+            display: flex;
+            justify-content: space-between;
+        }
+        div.hot_01{
+            margin-top: 40px;
+        }
+        div.hot_02{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin-bottom: 20px;
+        }
+        div.neighbor{
+            display: flex;
+            justify-content: space-between;
+        }
+        div.topic{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+        }
+        div.plus{
+            display: flex;
+            justify-content: center;
+        }
+        div.login{
+            width: 300px;
+            height: 150px;
+            border: 0.1px solid rgba(83, 83, 83, 0.144);
+            border-radius: 10px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 100px;
+        }
+        div.middle_right{
+            width: 500px;
+        }
+        div.login_site{
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        div.login_list{
+            margin: 0 auto;
+            display: flex;
+        }
+        div.login_list p{
+            font-size: small;
+        }
+        div.login_list a{
+            text-decoration-line: none;
+        }
+        div.login_list a:visited{
+            color:black;
+        }
+        div.login_list a:hover{
+            text-decoration: underline;
+        }
+        div.announcement{
+            margin-top: 20px;
+        }
+        div.etc{
+            width: 300px;
+            height: 150px;
+            border-top: 0.1px solid rgba(83, 83, 83, 0.144);
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-right: 100px;
+            align-content: flex-start;
+        }
+        div.etc a{
+            text-decoration-line: none;
+        }
+        div.etc p{
+            font-size: small;
+            margin: 0;
+        }
+        div.etc a:visited{
+            color: black;
+        }
+        div.etc a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo_search">
+            <div class="logo">
+                <a href="#"><img src="./img/naver.png" alt="네이버"></a>
+                <a href="#"><img src="./img/카페.png" alt="카페"></a>
+            </div>
+            <input type="text" name="search" id="search" placeholder="원하는 카페, 글을 찾아보세요 ">
+        </div>
+        <div class="top_right">
+            <div class="top_login">
+                <a href="https://nid.naver.com/nidlogin.login"><img src="./img/top_login.png" alt="top_login"></a>
+            </div>
+            <div class="square_logo">
+                <img src="./img/square_logo.png" alt="square_logo">
+            </div>
+        </div>
+    </header>
+    <div class="middle">
+        <div class="middle_left">
+            <div class="big_menu">
+                <a href="#"><img src="./img/카페홈.png" alt="카페홈"></a>
+                <a href="https://cafe.naver.com/ca-fe/home/town/talks"><img src="./img/이웃.png" alt="이웃"></a>
+                <a href="https://section.cafe.naver.com/ca-fe/home/feed"><img src="./img/구독.png" alt="구독"></a>
+                <a href="https://section.cafe.naver.com/ca-fe/home/cafe-hots"><img src="./img/인기글.png" alt="인기글"></a>
+                <a href="https://section.cafe.naver.com/ca-fe/home/my-news"><img src="./img/내소식.png" alt="내소식"></a>
+                <a href="https://talk.cafe.naver.com/channels"><img src="./img/채팅.png" alt="채팅"></a>
+            </div>
+            <div class="small_menu">
+                <a href="https://section.cafe.naver.com/ca-fe/home/themes/17?type=ar"><p>주제별 카페</p></a>
+                <a href="https://section.cafe.naver.com/ca-fe/home/areas"><p>지역별 카페</p></a>
+                <a href="https://section.cafe.naver.com/ca-fe/home/fans"><p>인기 팬카페</p></a>
+                <a href="https://section.cafe.naver.com/ca-fe/home/powers/popular"><p>대표 카페</p></a>
+                <a href="https://section.cafe.naver.com/ca-fe/home/rankings"><p>카페 랭킹</p></a>
+            </div>
+        </div>
+        <div class="middle_middle">
+            <div class="cafe_home">
+                <h3>카페홈</h3>
+            </div>
+            <div class="hot">
+                <img src="./img/인기글_1.png" alt="인기글_1">
+                <a href="https://section.cafe.naver.com/ca-fe/home/cafe-hots"><img src="./img/더보기.png" alt="더보기"></a>
+            </div>
+            <div class="hot_01">
+                <a href="https://cafe.naver.com/casuallydressed?iframe_url_utf8=%2FArticleRead.nhn%253FfromPopular%3Dtrue%2526clubid%3D19943558%2526articleid%3D722771%2526art%3DaW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtcG9wdWxhcg.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjcyMjc3MSwiaXNzdWVkQXQiOjE3Mjk4NDg4MTkxODQsImNhZmVJZCI6MTk5NDM1NTh9.WGQiZ81X2dMNs6bhqspyxO0GTLkypZfeAvLeGjmyEao"><img src="./img/hot01_01.png" alt="hot0101"></a>
+                <a href="https://cafe.naver.com/watchholic?iframe_url_utf8=%2FArticleRead.nhn%253FfromPopular%3Dtrue%2526clubid%3D13035451%2526articleid%3D736831%2526art%3DaW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtcG9wdWxhcg.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjczNjgzMSwiaXNzdWVkQXQiOjE3Mjk4NDg4MTkxODQsImNhZmVJZCI6MTMwMzU0NTF9.Zhpm2Wo2Y0njo_87Ki6sSTcRsxnhTfxPVXmu-eljbII"><img src="./img/hot_01_02.png" alt="hot0102"></a>
+                <a href="https://cafe.naver.com/zzop?iframe_url_utf8=%2FArticleRead.nhn%253FfromPopular%3Dtrue%2526clubid%3D10070820%2526articleid%3D2800716%2526art%3DaW50ZXJuYWwtY2FmZS1hcnRpY2xlLXJlYWQtcG9wdWxhcg.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjI4MDA3MTYsImlzc3VlZEF0IjoxNzI5ODQ4ODE5MTg0LCJjYWZlSWQiOjEwMDcwODIwfQ.fRcs6UaX4aTAtQg2LRtUQR3v58l0JAR7FgVsflkHgVk"><img src="./img/hot_01_03.png" alt="hot0103"></a>
+            </div>
+            <div class="hot_02">
+                <img src="./img/hot_02_01.png" alt="hot0201" width=680px>
+                <img src="./img/hot_02_02.png" alt="hot0202" width=680px>
+                <img src="./img/hot_02_03.png" alt="hot0203" width=680px>
+                <img src="./img/hot_02_04.png" alt="hot0204" width=680px>
+                <img src="./img/hot_02_05.png" alt="hot0205" width=680px>
+            </div>
+            <div class="neighbor">
+                <img src="./img/강남구 이웃 소식.png" alt="강남구이웃소식">
+                <a href="https://cafe.naver.com/ca-fe/home/town/talks?rcode=09680"><img src="./img/더보기.png" alt="더보기"></a>
+            </div>
+            <div class="neighbor_01">
+                <a href="https://cafe.naver.com/ca-fe/town-talks/YvrcQ5liSHeFMBgomEQw-A?rcode=09680108"><img src="./img/neighbor_01.png" alt="이웃1"></a>
+                <a href="https://cafe.naver.com/ca-fe/town-talks/VTBvGuu7Qh2Xzpd8-22EgA?rcode=09680101"><img src="./img/neighbor_02.png" alt="이웃2"></a>
+                <a href="https://cafe.naver.com/daechieunma?iframe_url=%2FArticleRead.nhn%3Fclubid%3D29427028%26articleid%3D33852%26tc%3Dsection_home_town_articles%26art%3DaW50ZXJuYWwtY2FmZS13ZWItc2VjdGlvbi1zZWFyY2gtbGlzdA.eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjYWZlVHlwZSI6IkNBRkVfSUQiLCJhcnRpY2xlSWQiOjMzODUyLCJpc3N1ZWRBdCI6MTcyOTg1MDEyOTM3NiwiY2FmZUlkIjoyOTQyNzAyOH0.MaCQfMDbMB2iaP5W1TL9ZGE-LRJunvnZhyA7o8QI_FI"><img src="./img/neighbor_03.png" alt="이웃3"></a>
+                <a href="https://cafe.naver.com/ca-fe/town-sale/Jpw06r8gRJOWLwg1E2bDhA?rcode=09680101"><img src="./img/neighbor_04.png" alt="이웃4"></a>
+            </div>
+            <div class="topic">
+                <img src="./img/주제별 인기 카페.png" alt="주제별인기카페" width="150px">
+                <img src="./img/주제리스트.png" alt="주제리스트" width="650px">
+                <img src="./img/topic_list.png" alt="topic_list" width="650px">
+            </div>
+            <div class="plus">
+                <img src="./img/더보기2.png" alt="더보기2">
+            </div>
+        </div>
+        <div class="middle_right">
+            <div class="login">
+                <div class="login_site">
+                    <a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fsection.cafe.naver.com%2Fca-fe%2Fhome"><img src="./img/naver_login.png" alt="네이버로그인"></a>
+                </div>
+                <div class="login_list">
+                    <a href="https://nid.naver.com/user2/help/idInquiry.nhn?menu=idinquiry"><p>아이디 찾기</p></a>
+                    <p>|</p>
+                    <a href="https://nid.naver.com/user2/help/pwInquiry.nhn?menu=pwinquiry"><p>비밀번호 찾기</p></a>
+                    <p>|</p>
+                    <a href="https://nid.naver.com/user2/join/agree?lang=ko_KR&realname="><p>회원가입</p></a>
+                </div>
+            </div>
+            <div class="announcement">
+                <img src="./img/공지사항.png" alt="공지사항">
+            </div>
+            <div class="program">
+                <a href="https://cafe.naver.com/cafesupport/178508"><img src="./img/카페지원프로그램.png" alt="카페지원프로그램"></a>
+            </div>
+            <div class="cafesupport">
+                <a href="https://cafe.naver.com/cafesupport"><img src="./img/공카.png" alt="공카"></a>
+            </div>
+            <div class="adv">
+                <a href="https://happybean.naver.com/fundings/detail/F1551"><img src="./img/광고.png" alt="광고"></a>
+            </div>
+            <div class="smartbot">
+                <a href="https://talk.naver.com/ct/w4nd8o?resizeTo=1920,1032"><img src="./img/스마트봇.png" alt="스마트봇"></a>
+            </div>
+            <div class="report">
+                <a href="https://help.naver.com/reportCenter/home.help"><img src="./img/신고.png" alt="신고"></a>
+            </div>
+            <div class="etc">
+                <a href="https://section.cafe.naver.com/ca-fe/home/terms"><p>카페 이용약관</p></a>
+                <p>ㆍ</p>
+                <a href="https://section.cafe.naver.com/ca-fe/home/operating-rules/1"><p>카페 운영원칙</p></a>
+                <p>ㆍ</p>
+                <a href="https://policy.naver.com/rules/privacy.html"><p><b>개인정보처리방침</b></p></a>
+                <p>ㆍ</p>
+                <a href="https://policy.naver.com/rules/disclaimer.html"><p>책임의 한계와 법적고지</p></a>
+                <p>ㆍ</p>
+                <a href="https://right.naver.com/"><p>권리보호센터</p></a>
+                <p>ㆍ</p>
+                <a href="https://help.naver.com/service/5622/category/bookmark?lang=ko"><p>카페 고객센터</p></a>
+                <a href="https://www.navercorp.com/"><p><b>ⓒ NAVER Corp.</b></p></a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
