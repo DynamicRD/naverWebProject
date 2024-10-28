@@ -32,9 +32,9 @@ header a{
     color: white;
 }
 header{
-    /* background-color: rgb(105,195,104); */
+    background-color: rgb(105,195,104);
     /* width: 1500px; */
-    background-color: rgb(25, 206, 96);
+    /* background-color: rgb(25, 206, 96); */
     height: 53.99px;
     display: flex;
     justify-content: center;
